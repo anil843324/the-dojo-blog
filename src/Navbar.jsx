@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='navbar'>
@@ -8,12 +8,12 @@ const Navbar = () => {
 
           <div className='links'>
 
-               <a href="/">Home</a>
-               <a href="/create" style={{
+               <Link to="/">Home</Link>
+               <Link to="/create" style={{
                  color:'white',
                  backgroundColor:"#f1356d",
                  borderRadius:'8px'
-               }} >New Blog</a>
+               }} >New Blog</Link>
 
 
           </div>

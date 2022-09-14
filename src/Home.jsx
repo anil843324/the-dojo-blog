@@ -9,6 +9,7 @@ const Home = () => {
 
  
   return (
+    <div className="content">
     <div className='home'> 
 
      { error && <div>{error}</div> }
@@ -16,6 +17,7 @@ const Home = () => {
          isPeinding &&  <div> Loading...</div>
        }
         { data && <Bloglist blog={data} title='All Blogs!' /> }   
+    </div>
     </div>
   )
 }
