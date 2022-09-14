@@ -1,11 +1,11 @@
 import React from "react";
 
-const Bloglist = ({blog}) => {
+const Bloglist = ({blog,title}) => {
 
      
   return (
     <div className="blog-list" >
-          <h2> All Blogs! </h2>
+          <h2> {title} </h2>
       {blog.map((ele) => (
         <div className="blog-preview" key={ele.id}>
           <h2>{ele.title}</h2>
