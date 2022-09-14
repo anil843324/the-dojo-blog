@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "My first Blog",
+      "body": " aklsdjgl;asdgjlasdkg klasdgjlaksd;g asdk;gjsadfkl g;alsdkgjnkdflsjgbl;akdfsgkdf ",
+      "author": "anil",
+      "id": 1
+    },
+    {
+      "title": "Opening part!",
+      "body": " aklsdjgl;asdgjlasdkg klasdgjlaksd;g asdk;gjsadfkl g;alsdkgjnkdflsjgbl;akdfsgkdf ",
+      "author": "sunil",
+      "id": 2
+    }
+  ]
+}

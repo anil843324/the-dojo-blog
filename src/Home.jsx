@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
+import Bloglist from './Bloglist'
 
 const Home = () => {
-  return (
-    <div className='home'>
-   
-    <h2>Home Page</h2>
 
-         
+   const [blog,setBlog]=useState([]);
+
+
+   useEffect(() => {
+       
+      fetch('http://localhost:8000/blogs')
+      .then((response)=>  response.json() )
+       .then((data)=>  setBlog(data))
+
+   }, [])
+   
+    
+   
+  return (
+    <div className='home'> 
+        { blog && <Bloglist blog={blog} /> }   
     </div>
   )
 }
