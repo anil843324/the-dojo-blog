@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Bloglist from './Bloglist'
-import useFetch from './useFetch'
+import Bloglist from '../components/Bloglist'
+import useFetch from '../customHook/useFetch'
 
 const Home = () => {
    

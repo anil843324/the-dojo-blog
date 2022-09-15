@@ -1,9 +1,9 @@
-import Home from "./Home";
-import Navbar from "./Navbar";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
-import Create from "./Create";
-import BlogDetails from "./BlogDetails";
-import NotFound from "./components/NotFound";
+import Create from "./pages/Create";
+import BlogDetails from "./pages/BlogDetails";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <>
@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
-       
       </Routes>
     </>
   );
