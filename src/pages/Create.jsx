@@ -23,7 +23,7 @@ const Create = () => {
       author,
     };
      setIsPending(true)
-    fetch('http://localhost:8000/blogs',{
+    fetch('https://anil-dojo-app.herokuapp.com/blogs',{
        method : 'POST',
        headers: {"Content-Type":'application/json'},
        body: JSON.stringify(blog)

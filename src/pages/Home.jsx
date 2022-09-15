@@ -5,7 +5,7 @@ import useFetch from '../customHook/useFetch'
 
 const Home = () => {
    
-   const { data,isPeinding,error}=useFetch('http://localhost:8000/blogs')
+   const { data,isPeinding,error}=useFetch('https://anil-dojo-app.herokuapp.com/blogs')
 
  
   return (

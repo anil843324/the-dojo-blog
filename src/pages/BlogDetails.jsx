@@ -10,11 +10,11 @@ const BlogDetails = () => {
        
            const navigate=useNavigate()
 
-        const { data,isPeinding,error}=useFetch(`http://localhost:8000/blogs/${id}`)
+        const { data,isPeinding,error}=useFetch(`https://anil-dojo-app.herokuapp.com/blogs/${id}`)
  
         const handleDelte=()=>{
 
-          fetch(`http://localhost:8000/blogs/${data.id}`,{
+          fetch(`https://anil-dojo-app.herokuapp.com/blogs/${data.id}`,{
 
             method:"DELETE"
 
