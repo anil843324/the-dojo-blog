@@ -1,14 +1,30 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React from 'react'
+
+import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from './useFetch'
+
 
 const BlogDetails = () => {
 
          const {id}= useParams()
        
-        const { data,isPeinding,error}=useFetch(`http://localhost:8000/blogs/${id}`)
+           const navigate=useNavigate()
 
+        const { data,isPeinding,error}=useFetch(`http://localhost:8000/blogs/${id}`)
+ 
+        const handleDelte=()=>{
+
+          fetch(`http://localhost:8000/blogs/${data.id}`,{
+
+            method:"DELETE"
+
+          })
+          .then(()=>{
+            navigate('/')
+          })
+            
+
+        } 
          
      
     
@@ -30,7 +46,8 @@ const BlogDetails = () => {
                <p>Written by {data.author}</p>
 
                 <div> {data.body} </div>
-
+    
+                 <button onClick={handleDelte }>delete</button>
 
              </article>
           )
