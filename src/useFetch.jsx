@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 const useFetch=(url)=>{
 
-    const [data,setData]=useState([]);
+    const [data,setData]=useState(null);
     const [isPeinding,setIsPending]=useState(true)
-   const [error,setError]=useState(null);
+    const [error,setError]=useState(null);
 
 
 
